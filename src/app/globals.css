@@ -1,15 +1,15 @@
 @import "tailwindcss";
-/* 
-@font-face {
-  font-family: FigtreeVF;
-  src: url(chrome-extension://panammoooggmlehahpcjckcncfeffcoi/fonts/FigtreeVF.woff2)
-      format("woff2 supports variations"),
-    url(chrome-extension://panammoooggmlehahpcjckcncfeffcoi/fonts/FigtreeVF.woff2)
-      format("woff2-variations");
-  font-weight: 100 1000;
-  font-display: swap;
-} */
+@custom-variant dark (&:where(.dark, .dark *));
 
 body {
   position: relative;
+  transition-property: all;
+  transition-timing-function: var(
+    --tw-ease,
+    var(--default-transition-timing-function) /* cubic-bezier(0.4, 0, 0.2, 1) */
+  );
+  transition-duration: var(
+    --tw-duration,
+    var(--default-transition-duration) /* 150ms */
+  );
 }

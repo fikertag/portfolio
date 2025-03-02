@@ -20,7 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-gray-200 ${lexend.className}`}>{children}</body>
+      <body
+        className={`${lexend.className} bg-[#edede9] dark:bg-black transition-all`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
