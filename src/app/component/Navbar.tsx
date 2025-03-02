@@ -6,11 +6,7 @@ import Link from "next/link";
 const Navbar = () => {
   const [isDark, setIsDark] = useState<boolean>(() => {
     if (typeof window !== "undefined") {
-      return (
-        localStorage.getItem("theme") === "dark" ||
-        (!localStorage.getItem("theme") &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      );
+      return localStorage.getItem("theme") === "dark";
     }
     return false; // Default to light mode if on the server
   });
