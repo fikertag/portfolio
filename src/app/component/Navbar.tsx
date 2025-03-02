@@ -1,5 +1,5 @@
 "use client";
-import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+// import { motionuseMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -30,13 +30,13 @@ const Navbar = () => {
     });
   };
 
-  const count = useMotionValue(0); // Motion value starts at 0
-  const rounded = useTransform(count, (latest) => Math.round(latest)); // Keep it rounded
+  // const count = useMotionValue(0); // Motion value starts at 0
+  // const rounded = useTransform(count, (latest) => Math.round(latest)); // Keep it rounded
 
-  useEffect(() => {
-    const controls = animate(count, 232, { duration: 2 }); // Animate to 232 in 2 sec
-    return controls.stop; // Cleanup animation on unmount
-  }, [count]);
+  // useEffect(() => {
+  //   const controls = animate(count, 232, { duration: 2 }); // Animate to 232 in 2 sec
+  //   return controls.stop; // Cleanup animation on unmount
+  // }, [count]);
 
   return (
     <div className=" sticky z-40 top-4 noise flex justify-center p-2 items-center bg-[#b3b1b1] dark:bg-[#333333] transition-all  w-fit px-6 rounded-4xl  m-auto ">
