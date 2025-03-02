@@ -13,3 +13,11 @@ body {
     var(--default-transition-duration) /* 150ms */
   );
 }
+
+.noise {
+  background-image: url(../../public/noise1.png);
+}
+
+body {
+  background-image: url(../../public/noise1.png);
+}

@@ -39,18 +39,14 @@ const Navbar = () => {
   }, [count]);
 
   return (
-    <div className="relative noise flex justify-between p-2 items-center bg-[#edede9] dark:bg-black transition-all">
-      <span className="absolute right-1/6 top-36 h-4 w-60 rounded-3xl bg-[#344d50]/70 dark:bg-white/70 transition-all z-10 blur-3xl"></span>
-      <span className=" dark:bg-white/90 absolute right-2/3 top-36 h-20 w-6 rounded-3xl bg-[#344d50]/70 transition-all z-10 blur-3xl"></span>
-      <span className=" dark:bg-white/70 absolute right-1/4 top-44 h-12 w-20 rounded-3xl bg-[#344d50]/70 transition-all z-10 blur-3xl"></span>
-
-      <div className="w-[135px] h-12 pl-2 flex flex-col text-[#344D50] dark:text-[#f2e8e3] ">
+    <div className=" sticky z-40 top-4 noise flex justify-center p-2 items-center bg-[#b3b1b1] dark:bg-[#333333] transition-all  w-fit px-6 rounded-4xl  m-auto ">
+      {/* <div className="w-[135px] h-12 pl-2 flex flex-col text-[#344D50] dark:text-[#f2e8e3] ">
         <span className="text-2xl font-bold ">
           <motion.span>{rounded}</motion.span>
         </span>
         <span className="font-semibold text-xs ">Commits On Github</span>
-      </div>
-      <div className="flex flex-wrap gap-2 pr-2 items-center dark:text-[#c7c7c7]">
+      </div> */}
+      <div className="flex flex-wrap gap-6 pr-2 items-center dark:text-[#c7c7c7]">
         <Link href={"https://t.me/fikiryilkal_dev"}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
