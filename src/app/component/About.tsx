@@ -5,7 +5,7 @@ const About = () => {
     <section className="noise bg-[#edede9] dark:bg-black relative flex flex-row items-center justify-center gap-4 p-4 py-8 md:px-6 md:py-20 text-[#344d50] dark:text-[#f2e8e3] transition-all">
       <div className="flex flex-col items-center gap-4">
         <h3 className="text-5xl font-extralight text-secondary transition-all md:text-5xl lg:text-8xl text-center">
-          👋🏻 Hi, I'm Fikir
+          👋🏻 Hi, I&apos;m Fikir
         </h3>
         <h5 className="text-md pr-2/12 max-w-screen-md text-center font-extralight lg:text-xl mb-4 dark:text-[#c7c7c7]">
           A meticulous Fullstack Developer with a Computer Science degree,, in
