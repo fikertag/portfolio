@@ -1,25 +1,37 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="noise bg-[#edede9] dark:bg-black relative flex flex-row items-center pb-12 justify-center gap-4 md:px-6 h-screen text-[#344d50] dark:text-[#f2e8e3] transition-all px-4">
-      <span className="absolute right-1/6 top-36 h-4 w-60 rounded-3xl bg-[#344d50]/70 dark:bg-white/70 transition-all z-10 blur-3xl"></span>
-      <span className=" dark:bg-white/90 absolute right-2/3 top-36 h-20 w-6 rounded-3xl bg-[#344d50]/70 transition-all z-10 blur-3xl"></span>
-      <span className=" dark:bg-white/70 absolute right-1/4 top-44 h-12 w-20 rounded-3xl bg-[#344d50]/70 transition-all z-10 blur-3xl"></span>
-      <div className="flex flex-col items-center gap-4">
-        <h3 className="text-5xl font-extralight text-secondary transition-all md:text-5xl lg:text-8xl text-center pb-2">
-          architecting seamless digital experiences.
-        </h3>
-        <h5 className="text-md pr-2/12 max-w-screen-md text-center font-extralight lg:text-xl mb-4 dark:text-[#c7c7c7]">
-          👋🏻 Hi, I&apos;m{" "}
-          <span className="text-cyan-900 font-bold">Fikiryilkal</span> Fullstack
-          Developer with a Computer Science degree, passionate about building
-          and delivering clockwork-level solutions with precision and speed.
-        </h5>
-        <div className="flex flex-row gap-2">
+    <section className="noise bg-[#edede9] dark:bg-black relative flex flex-row items-center justify-center gap-4 p-4  md:px-6 py-24 text-[#344d50] dark:text-[#f2e8e3] transition-all w-full">
+      <div className="flex flex-col gap-6">
+        <div className="flex justify-between gap-2">
+          <div className="flex flex-col gap-4">
+            <h3 className="text-4xl font-extralight text-secondary transition-all md:text-6xl lg:text-7xl">
+              Hi, I&apos;m Fikir{" "}
+              <span className="hidden md:inline-block">👋🏻</span>
+            </h3>
+            <h5 className="text-sm font-extralight md:text-xl mb-4 max-w-[400px] md:max-w-[600px] dark:text-[#c7c7c7]  ">
+              A Fullstack Developer with a Computer Science degree, passionate
+              about building and delivering clockwork-level solutions with
+              precision and speed.
+            </h5>
+          </div>
+          <div className="w-36">
+            <Image
+              src={"/pawn.jpg"}
+              alt="profile"
+              height={"140"}
+              width={"140"}
+              className="rounded-full"
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-row gap-8">
           <Link
             href="resume.pdf"
-            className="w-fit text-[#D1D4D6] bg-[#2f3e46] flex px-2 lg:px-4 lg:h-12 rounded-sm items-center gap-2 font-semibold lg:text-sm text-xs py-0.5 hover:bg-[#192126] transition-all dark:bg-cyan-900 dark:text-white dark:hover:bg-cyan-950"
+            className="w-fit text-[#D1D4D6] bg-[#2f3e46] flex px-2 lg:px-4 rounded-sm items-center gap-2 font-semibold lg:text-sm text-xs hover:bg-[#192126] py-2 transition-all dark:bg-[#f2e8e3] dark:text-[#2f3e46] dark:hover:bg-[#d2cac6] "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +46,7 @@ const About = () => {
           </Link>
           <Link
             href={"https://t.me/fikiryilkal_dev"}
-            className="w-fit text-cyan-900 border flex px-2 lg:px-4 lg:h-12 rounded-sm items-center gap-2 font-semibold lg:text-sm text-xs py-0.5 hover:bg-[#2f3e46] hover:text-[#D1D4D6] transition-all dark:border-cyan-900 dark:text-cyan-900 dark:hover:bg-[#f2e8e3] dark:hover:text-[#2f3e46]"
+            className="w-fit text-[#2f3e46] border flex px-2 lg:px-4 rounded-sm items-center gap-2 font-semibold lg:text-sm text-xs hover:bg-[#2f3e46] hover:text-[#D1D4D6] transition-all dark:border-[#f2e8e3] dark:text-[#f2e8e3] dark:hover:bg-[#f2e8e3] dark:hover:text-[#2f3e46] py-2 "
           >
             MORE ABOUT ME
           </Link>
